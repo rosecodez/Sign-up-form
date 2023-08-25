@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: myFont;
+}
+@font-face {
+    font-family: myFont;
+    src: url(MarkoDemo-w1gl9.otf)
+}
+#main-container {
+    display: flex;
+    align-items: center;
+}
+#right-container {
+    font-size: 30px;
+    display: flex;
+}
+#left-container {
+    font-size: 50px;
+    display: flex;
+}
+#background-image {
+    width: 400px;
+    height: 800px;
+}
