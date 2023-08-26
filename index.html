@@ -12,33 +12,45 @@
         <div id="left-container">
             <div style="background-image: url('coffee.avif');" id="background-image">
                 <div id="image-text">
-                    <img src="download.png" id="logo" alt="ODIN" width ="100" height ="100">
+                    <img src="download.png" id="logo" alt="ODIN" width ="80" height ="105">
                     <h1 id='header'>ODIN</h1>
                 </div>
-            </div>
+                <div id="credits">
+                    <p>Photo by <a href="https://unsplash.com/@wojtekpaczes"class = "credits">Wojciech Pacześ</a> on <a href="https://unsplash.com/photos/OWmq7S7QEj0"class = "credits">Unsplash</a></p>
+                </div>
+            </div> 
         </div>
         <div id="right-container">
-            <p id="intro"> is not a real online service! You know you need something like this in your
-                life to help you realize your deepest dreams. Sign up now to get started.<br>
-                You know you want to.
-            </p>
-            <p>Let's do this!</p>
-            <form action="/action-page.php">
-                <label for="first-name">FIRST NAME</label>
-                <input type="text" id="first-name" name="first-name" value="">
-                <label for="last-name">LAST NAME</label>
-                <input type="text" id="last-name" name="last-name" value="">
-                <label for="email">FIRST NAME</label>
-                <input type="text" id="email" name="email" value="">
-                <label for="phone-number">FIRST NAME</label>
-                <input type="text" id="phone-number" name="phone-number" value="">
-                <label for="password">FIRST NAME</label>
-                <input type="text" id="password" name="password" value="">
-                <label for="confirm-password">FIRST NAME</label>
-                <input type="text" id="confirm-password" name="confirm-password" value="">
+            <div id="intro-container">
+                <p class="intro" id="first">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Sign up <em>now</em> to get started.</p>
+                <p class="intro"><br>You <em>know</em> you want to.</p>
+            </div>
+            <form action="/action-page.php" id="form-container">
+                <p class="intro" id="intro">Let's do this!</p>
+                <br>
+                <div id="form">
+                    <div id="left-form">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" class="form" id="first-name" name="first-name" value="">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" class="form" id="last-name" name="last-name" value="">
+                        <label for="email">EMAIL</label>
+                        <input type="text" class="form" id="email" name="email" value="">
+                    </div>
+                    <div id="right-form">
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="text" class="form" id="phone-number" name="phone-number" value="">
+                        <label for="password">PASSWORD</label>
+                        <input type="text" class="form" id="password" name="password" value="">
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="text" class="form" id="confirm-password" name="confirm-password" value="">
+                    </div>
+            </div>
             </form>
-            <button type="submit" form="nameform" value="Submit">Submit</button>
-            <p>Already have an account?<a href="log-in">Log in</a></p>
+            <div id="submit">
+                <button type="submit" form="nameform" value="Submit">Submit</button>
+                <p>Already have an account? <a href="log-in" id="log-in">Log in</a></p>
+            </div>
         </div>
     </div>
     
