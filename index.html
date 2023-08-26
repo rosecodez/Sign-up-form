@@ -6,6 +6,7 @@
     <title>Sign-up form</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="font" type="css" href="MarkoDemo-w1gl9.otf">
+    <link rel="script" type="js" href="script.js">
 </head>
 <body>
     <div id="main-container">
@@ -31,28 +32,34 @@
                 <div id="form">
                     <div id="left-form">
                         <label for="first-name">FIRST NAME</label>
-                        <input type="text" class="form" id="first-name" name="first-name" value="">
+                        <input type="text" class="form" id="first-name" name="first-name" placeholder="first name" required/>
                         <label for="last-name">LAST NAME</label>
-                        <input type="text" class="form" id="last-name" name="last-name" value="">
+                        <input type="text" class="form" id="last-name" name="last-name" placeholder="last name" required/>
                         <label for="email">EMAIL</label>
-                        <input type="text" class="form" id="email" name="email" value="">
+                        <input type="email" class="form" id="email" name="email" placeholder="email" required/>
                     </div>
                     <div id="right-form">
                         <label for="phone-number">PHONE NUMBER</label>
-                        <input type="text" class="form" id="phone-number" name="phone-number" value="">
+                        <input type="text" class="form" id="phone-number" name="phone-number" placeholder="phone number" value="" required/>
+                        
                         <label for="password">PASSWORD</label>
-                        <input type="text" class="form" id="password" name="password" value="">
+                        <input type="password" class="form" id="password" name="password" placeholder="password" name="password" value="" required/>
+                        <p class="match"></p>
                         <label for="confirm-password">CONFIRM PASSWORD</label>
-                        <input type="text" class="form" id="confirm-password" name="confirm-password" value="">
+                        <input type="password" class="form" id="confirm-password" name="confirm-password" placeholder="confirm password" value="" required/>
+                        <p class="match"></p>
                     </div>
-            </div>
-            </form>
-            <div id="submit">
-                <button type="submit" form="nameform" value="Submit">Submit</button>
-                <p>Already have an account? <a href="log-in" id="log-in">Log in</a></p>
-            </div>
+                     
+                </div>
+                <div id="submit">
+                    <input type="submit" id="button" value="Submit">
+                    <p>Already have an account? <a href="log-in" id="log-in">Log in</a></p>
+                </div> 
+            </form>  
+               
         </div>
     </div>
-    
+
+
 </body>
 </html>

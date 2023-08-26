@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    
 }
 @font-face {
     font-family: myFont;
@@ -36,12 +35,17 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    box-shadow: 0 6px 6px -4px rgb(0 0 0 / 30%);
 }
 #form {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: flex-start;
     gap: 90px;
+}
+input[class=form], select {
+    padding: 12px 20px;
+    border: 1px solid #ccc;
 }
 #right-form, #left-form{
     display: flex;
@@ -63,7 +67,7 @@
     flex-direction: column;
     align-items: flex-start;
 }
-button {
+#button {
     background-color: #4D2D18;
     color: white;
     text-align: center;
@@ -71,6 +75,10 @@ button {
     padding: 4px 59px;
     font-size: 25px;
     border-radius: 10px;
+}
+button:hover {
+    background-color: #744322;
+    color: black;
 }
 #log-in {
     color: #4D2D18;
@@ -115,4 +123,11 @@ button {
 .credits {
     text-decoration: underline;
     color: white;
+}
+.message{
+    padding: 10px 35px;
+    font-size: 18px;
+}
+input:focus {
+    background-color: lightblue;
 }
